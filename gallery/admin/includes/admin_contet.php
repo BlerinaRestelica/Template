@@ -26,7 +26,9 @@
                         //this method is used to find the user by its id
                         $found_user = User::find_user_by_id(2);
 
-                         echo $found_user['username']
+                         $user = User :: instantation($found_user);
+
+                         echo $user->username;
                         ?>
                         <ol class="breadcrumb">
                             <li>
